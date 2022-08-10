@@ -12,10 +12,10 @@ public:
                 cPrice = p[i];
             }
             
-            int temp = p[i]-cPrice;
-            if(temp > Profit)
+            int cProfit = p[i]-cPrice;
+            if(cProfit > Profit)
             {
-                Profit = temp;
+                Profit = cProfit;
             }
         }
         
