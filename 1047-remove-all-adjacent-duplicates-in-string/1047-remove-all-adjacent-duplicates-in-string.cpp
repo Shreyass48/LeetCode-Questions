@@ -26,11 +26,11 @@ public:
         
         while(!stk.empty())
         {
-             ans.push_back(stk.top());
+             ans.insert(ans.begin(),stk.top());
              stk.pop();
         }
         
-        reverse(ans.begin(),ans.end());
+        //reverse(ans.begin(),ans.end());
         
         return ans;
         
