@@ -3,8 +3,7 @@ public:
     int kthSmallest(vector<vector<int>>& matrix, int k) 
     {
         
-        vector<int> ans;
-        
+        vector<int> ans; 
         for(int i = 0; i < matrix.size(); i++)
         {
             for(int j = 0; j < matrix[i].size(); j++)
@@ -14,18 +13,18 @@ public:
         }
         
         sort(ans.begin(),ans.end());
-        int n = k, a = 0;
-        for(int i = 0; i < ans.size(); i++)
-        {
-            n--;
-            if(n == 0)
-            {
-                a = ans[i];
-                break;
-            }
-        }
+        // int n = k, a = 0;
+        // for(int i = 0; i < ans.size(); i++)
+        // {
+        //     n--;
+        //     if(n == 0)
+        //     {
+        //         a = ans[i];
+        //         break;
+        //     }
+        // }
         
-        return a;
+        return ans[k-1];
     }
     
    
